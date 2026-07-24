@@ -101,7 +101,7 @@ git clone https://github.com/your-username/Trava.git
 
 MCA Student | Web Developer
 
-GitHub: https://github.com/your-username
+GitHub: https://github.com/razz777
 
 ---
 
