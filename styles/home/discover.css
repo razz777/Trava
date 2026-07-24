@@ -1,0 +1,181 @@
+#discover{
+    /* padding:5rem 0; */
+    padding-bottom: 2rem;
+}
+
+#discover h2{
+    padding: 4rem 0 2rem 0;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#discover .container>div{
+    width: 100%;
+    height:22rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#discover .card{
+    width:23%;
+    height:20rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    position:relative;
+}
+#discover .card:nth-of-type(2),#discover .card:nth-of-type(4){
+    align-self: flex-end;
+}
+#discover .card .card__background{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+#discover .card .location{
+    position: absolute;
+    top:1rem;
+    right:1rem;
+    z-index: 3;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    padding:0.5rem;
+    border-radius: 20px;
+}
+#discover .card .location> img{
+    width:0.8rem;
+    object-fit: cover;
+    margin-right: 0.25rem;
+}
+#discover .card .location> p{
+    font-size: 0.85rem;
+}
+@media screen and (max-width:1050px){
+    #discover{
+        padding:5rem 0 2rem 0;
+    }
+    
+    #discover .container>div{
+        width: 100%;
+        height:17rem;
+    }
+    
+    #discover .card{
+        height:15rem;
+    }
+
+    #discover .card .location{
+        font-size: 0.85rem;
+    }
+}
+@media screen and (max-width:635px){
+    
+    #discover .container>div{
+        width: 100%;
+        height:auto;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap:1rem;
+    }
+    
+    #discover .card{
+        width: 100%;
+        height:15rem;
+    }
+    #discover .card:nth-of-type(2),#discover .card:nth-of-type(4){
+        align-self: auto;
+    }
+}
+
+/* Hover Effect */
+.card:focus, .card:active, .card:hover {
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* tourlist section  */
+
+.tourlist {
+    display: grid;
+    grid-template-columns: repeat(2, 5fr);
+    gap: 10rem;
+    align-items: center;
+    padding: 120px 17% 80px;
+}
+
+.tourlist-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.tourlist-img img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.tourlist-text h5 {
+    font-size: 22px;
+    font-weight: 600;
+    color: brown;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-bottom: 20px;
+}
+
+.tourlist-text h2 {
+    font-size: var(--h2-font);
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.tourlist-text p {
+    font-size: var(--p-font);
+    font-weight: 500;
+    line-height: 30px;
+    color: brown;
+    margin-bottom: 30px;
+}
+
+.btn1 {
+    display: inline-block;
+    padding: 13px 40px;
+    background: rgb(252, 222, 178);
+    color: var(--bg-color);
+    font-size: 15px;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .50s ease;
+}
+
+.btn1:hover {
+    transform: translate3d(0, -3px, 0);
+    border: 2px solid rgb(252, 222, 178);
+    color: var(--text-color);
+    background: transparent;
+}
+
+@media screen and (max-width: 600px) {
+    .tourlist {
+        grid-template-columns: 1fr;
+        gap: 5rem;
+    }
+
+    .tourlist-img img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 852px) {
+    .btn1{
+        padding: 10px 20px;
+    }
+    
+}
